@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harold Ledger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="colores.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="encabezado flex">
+    <div class="marca" style="font-family: 'Pacifico', cursive; text-transform: uppercase; font-weight: 900; font-size: 28px;">
+        Harold Ledger
+    </div>
+    <div style="text-align: right; font-size: 14px; line-height: 1.2; color: var(--color-blanco);">
+      Harold Ariel Lanza Yapuchura<br />
+      <small style="font-size: 12px; opacity: 0.8;">Versión: v1.0</small>
+    </div>
+  </div>
+  <div class="opciones">
+    <div class="opcion" onclick="window.location.href='registrar-gasto.html'">Registrar Gasto</div>
+    <div class="opcion" onclick="window.location.href='ingresos.html'">Registrar Ingreso</div>
+    <div class="opcion" onclick="window.location.href='fondos.html'">Fondos Totales</div>
+    <div class="opcion" onclick="window.location.href='ahorros.html'">Ahorros Totales</div>
+    <div class="opcion" onclick="window.location.href='creditos.html'">Créditos Actuales</div>
+    <div class="opcion" onclick="window.location.href='configuraciones.html'">Configuraciones</div>
+  </div>
+
+  <!-- Sección adicional: Registro (con subsecciones que tú puedes definir) -->
+  <div class="opciones">
+    <div class="opcion" onclick="window.location.href='registro.html'">Registro General</div>
+    <!-- Aquí puedes agregar subsecciones como:
+    <div class="opcion" onclick="window.location.href='registro-completo.html'">Ver Registro Completo</div>
+    -->
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <!-- Firebase Config -->
+  <script src="firebase-config.js"></script>
+
+</body>
+</html>

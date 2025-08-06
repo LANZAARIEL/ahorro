@@ -1,0 +1,190 @@
+/* === colores.css optimizado === */
+
+/* 🎨 Variables globales de color */
+:root {
+  --color-plomo: #4b4b4b;
+  --color-turquesa-oscuro: #0e8388;
+  --color-turquesa-hover: #095d60;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+
+  --sombra-turquesa: 0 4px 6px rgba(14, 131, 136, 0.5);
+  --sombra-hover: 0 6px 10px rgba(9, 93, 96, 0.7);
+  --sombra-negra: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* === Global === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-plomo);
+  color: var(--color-blanco);
+}
+
+/* === Encabezado === */
+.encabezado {
+  background: linear-gradient(to right, var(--color-turquesa-oscuro), var(--color-negro));
+  color: var(--color-blanco);
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: var(--sombra-negra);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Botones y opciones === */
+.boton-categoria,
+.opcion,
+.boton-inicio,
+button {
+  background-color: var(--color-turquesa-oscuro);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--sombra-turquesa);
+  user-select: none;
+  text-align: center;
+}
+
+.boton-inicio {
+  margin-left: auto;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.boton-categoria:hover,
+.opcion:hover,
+.boton-inicio:hover,
+button:hover {
+  background-color: var(--color-turquesa-hover);
+  box-shadow: var(--sombra-hover);
+}
+
+/* === Contenedores === */
+.contenedor-botones,
+.opciones {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.contenedor-botones {
+  grid-template-columns: 1fr;
+}
+
+.opciones {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* === Formularios === */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Estilo formulario personalizado */
+.formulario {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--sombra-negra);
+  gap: 12px;
+  display: none;
+  flex-direction: column;
+}
+
+.formulario.mostrar {
+  display: flex;
+}
+
+.formulario input,
+.formulario textarea {
+  background-color: #ffffff22;
+  color: var(--color-blanco);
+  resize: vertical;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: var(--color-blanco);
+}
+
+.formulario button {
+  background-color: var(--color-turquesa-oscuro);
+  color: var(--color-blanco);
+  font-weight: 600;
+  box-shadow: var(--sombra-turquesa);
+}
+
+.formulario button:hover {
+  background-color: var(--color-turquesa-hover);
+  box-shadow: var(--sombra-hover);
+}
+
+/* === Personas (uso específico) === */
+.contenedor-personas {
+  max-width: 400px;
+  margin: 30px auto 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.btn-persona {
+  flex: 1;
+}
+
+.btn-persona.active {
+  background-color: var(--color-turquesa-hover);
+  box-shadow: var(--sombra-hover);
+}
+
+.tarjeta-fondo {
+  background-color: var(--color-turquesa-oscuro);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--sombra-negra);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tarjeta-fondo h2 {
+  font-size: 20px;
+  color: var(--color-blanco);
+  margin: 0;
+}
+
+.tarjeta-fondo .monto {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffffcc;
+}
+
+.tarjeta-fondo .descripcion {
+  font-size: 14px;
+  color: #d1e8e9;
+}
